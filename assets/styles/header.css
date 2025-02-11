@@ -1,0 +1,51 @@
+.header{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 75rem ;
+    height: 20vh;
+}
+
+.nav__list{
+    display: flex;
+    gap: 2em;
+    list-style-type: none;
+    padding: 1.5em 0;
+    align-items: center;
+}
+
+.nav__link{
+    font-size: 1rem;
+    color: var(--cor-nav-links);
+    font-weight: 400;
+}
+
+.nav__button{
+    background:var(--cor-background-botao);
+    border: 1px solid var(--cor-borda-botao);
+    border-radius: 6px;
+    color: var(--cor-texto-botao);
+    padding: 1em 2em;
+}
+
+
+
+@media  screen and (max-width:450px) {
+    
+    .header{
+        height: 10vh;
+    }
+    
+    .nav__link{
+        display: none;
+        
+    }
+
+    .nav__list{
+        justify-content: flex-end;
+        width: 100%;
+        padding: 1.5em 2rem;
+        
+    }
+
+
+}
